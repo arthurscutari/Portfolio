@@ -69,11 +69,20 @@ header {
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 90px;
+}
+.div-header-nome i {
+    color: #2ecc71;
+    margin: 0 5px;
+    font-size: 14px;
+    transform: translateY(-1px);
 }
 .div-header-nome h2 {
-    color:#535c68;
-    font-size: 16px;
+    color: #2ecc71;
+    font-size: 14px;
+    margin: 0;
 }
 nav{
     display: flex;
