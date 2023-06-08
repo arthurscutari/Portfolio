@@ -1,0 +1,17 @@
+@import './components/Apresentação';
+@import './components/Header';
+@import './abstract/variaveis';
+@import './components/Projetos';
+@import './components/Habilidades';
+@import './components/Footer';
+body {
+
+    @include body-preset;
+    @include mobile{
+       height: 400vh;
+    }
+    
+}
+html {
+    scroll-behavior: smooth;
+}
