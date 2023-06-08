@@ -1,0 +1,431 @@
+@import '../abstract/variaveis';
+
+.section-habilidades{
+    height: 100vh;
+    width: 100vw;
+    @include display-flex;
+    flex-direction: column;
+    @include mobile {
+        height: 100vh;
+        width: 100vw;
+    }
+    .div-titulo-habilidades{
+
+        height: 20%;
+        width: 100%;
+        @include display-flex;
+        flex-direction: column;
+        @include mobile {
+            height: 15%;
+        }
+        h2{
+            @include gradient;
+            margin: 0;
+            font-size: calc($tamanho-fonte*3);
+            @include mobile {
+                font-size: $tamanho-fonte;
+            }
+        }
+        h3 {
+            margin: 0;
+            color: $cor-cinza;
+            font-weight: 500;
+            font-size: $tamanho-fonte;
+            @include mobile {
+                font-size: calc($tamanho-fonte*.4);
+                text-align: center;
+                width: 80%;
+            }
+        }
+    }
+    .div-container-habilidades{
+
+        height: 80%;
+        width: 70%;
+        @include display-flex;
+        @include box-shadow;
+        border-radius: 20px;
+        @include mobile {
+           
+
+            height: 85%;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .div-hard-skills{
+            height: 100%;
+            width: 80%;
+            @include mobile {
+                    
+                height: 70%;  
+                width: 100%;
+            }
+            .div-titulo-grid{
+                height: 10%;
+                width: 100%;
+                @include display-flex;
+                @include mobile {
+                    
+                    height: 15%;
+                    width: 100%;
+                    font-size: calc($tamanho-fonte*.7);
+                    
+                }
+                h3{
+                    margin: 0;
+                    color: $cor-branca;
+                    padding: 10px;
+                    border-radius: 30px;
+                    background-color: $cor-principal;
+                }
+               
+            }
+            .div-grid-habilidades{
+                width: 100%;
+                height: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                @include mobile {
+                    height: 85%;
+                }
+                .div-html-habilidades{
+                    grid-column:  1/3;
+                    grid-row: 1/2;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    @include box-shadow;
+                    border-radius: 20px;
+                    @include mobile {
+                        padding: 5px;
+                        border-radius: 15px;
+                    }
+                    .div-icone-habilidade{
+                        height: 20%;
+                        width: 100%;
+                        @include display-flex;
+                        i{
+                            font-size: calc($tamanho-fonte*2.5);
+                            color: $cor-laranja;
+                            @include mobile {
+                                font-size: $tamanho-fonte;
+                                
+                            }
+                        }
+                    }
+                    .div-descricao-habilidades{
+                        height: 80%;
+                        width: 100%;
+                        
+                        p{
+                            margin: 0;
+                            font-size: calc($tamanho-fonte*0.8);
+                            text-align: justify;
+                            text-indent: 20px;
+                            @include mobile {
+                                font-size: 5px;
+                                
+                            }
+                        }
+                    }
+                }
+                .div-css-habilidades{
+                    grid-column:  3/5;
+                    grid-row: 1/2;
+                    box-sizing: border-box;
+                        padding: 10px;
+                        @include box-shadow;
+                        border-radius: 20px;
+                        @include mobile {
+                            padding: 5px;
+                            border-radius: 15px;
+                        }
+                    .div-icone-habilidade{
+                        height: 20%;
+                        width: 100%;
+                        @include display-flex;
+                        i{
+                            font-size: calc($tamanho-fonte*2.5);
+                            color: $cor-azul;
+                            @include mobile {
+                                font-size: $tamanho-fonte;
+                                
+                            }
+                        }
+                    }
+                    .div-descricao-habilidades{
+                        height: 80%;
+                        width: 100%;
+                        p{
+                            margin: 0;
+                            font-size: calc($tamanho-fonte*0.8);
+                            text-align: justify;
+                            text-indent: 20px;
+                            @include mobile {
+                                font-size: 5px;
+                                
+                            }
+                        }
+                    }
+                }
+                .div-js-habilidades{
+                    grid-column:  2/4;
+                    grid-row: 2/3;
+                    box-sizing: border-box;
+                        padding: 10px;
+                        @include box-shadow;
+                        border-radius: 20px;
+                        @include mobile {
+                            padding: 5px;
+                            border-radius: 15px;
+                        }
+                    .div-icone-habilidade{
+                        height: 20%;
+                        width: 100%;
+                        @include display-flex;
+                        i{
+                            font-size: calc($tamanho-fonte*2.5);
+                            color: $cor-amarela;
+                            @include mobile {
+                                font-size: $tamanho-fonte;
+                                
+                            }
+                        }
+                    }
+                    .div-descricao-habilidades{
+                        height: 80%;
+                        width: 100%;
+                        p{
+                            margin: 0;
+                            font-size: calc($tamanho-fonte*0.8);
+                            text-align: justify;
+                            text-indent: 20px;
+                            @include mobile {
+                                font-size: 5px;
+                                
+                            }
+                        }
+                    }
+                }     
+                .div-scss-habilidades{
+                    grid-column:  1/2;
+                    grid-row: 2/3;
+                    box-sizing: border-box;
+                        padding: 10px;
+                        @include box-shadow;
+                        border-radius: 20px;
+                        @include mobile {
+                            padding: 5px;
+                            border-radius: 15px;
+                        }
+                    .div-icone-habilidade{
+                        height: 20%;
+                        width: 100%;
+                        @include display-flex;
+                        i{
+                            font-size: calc($tamanho-fonte*2.5);
+                            color: $cor-vermelha;
+                            @include mobile {
+                                font-size: $tamanho-fonte;
+                                
+                            }
+                        }
+                    }
+                    .div-descricao-habilidades{
+                        height: 80%;
+                        width: 100%;
+                        p{
+                            margin: 0;
+                            font-size: calc($tamanho-fonte*0.8);
+                            text-align: justify;
+                            text-indent: 20px;
+                            @include mobile {
+                                font-size: 5px;
+                                
+                            }
+                        }
+                    }
+                }
+                .div-react-habilidades{
+                    grid-column:  4/5;
+                    grid-row: 2/3;
+                    box-sizing: border-box;
+                        padding: 10px;
+                        @include box-shadow;
+                        border-radius: 20px;
+                        @include mobile {
+                            padding: 5px;
+                            border-radius: 15px;
+                        }
+                    .div-icone-habilidade{
+                        height: 20%;
+                        width: 100%;
+                        @include display-flex;
+                        i{
+                            font-size: calc($tamanho-fonte*2.5);
+                            color: $cor-azul-react;
+                            @include mobile {
+                                font-size: $tamanho-fonte;
+                                
+                            }
+                        }
+                    }
+                    .div-descricao-habilidades{
+                        height: 80%;
+                        width: 100%;
+                        p{
+                            margin: 0;
+                            font-size: calc($tamanho-fonte*0.8);
+                            text-align: justify;
+                            text-indent: 20px;
+                            @include mobile {
+                                font-size: 5px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .div-soft-skills{
+            height: 100%;
+            width: 20%;
+            @include mobile {
+                height: 30%;
+                width: 100%;
+
+            }
+            .div-soft-titulo{
+                width: 100%;
+                height: 10%;
+                @include display-flex;
+                @include mobile {
+                    height: 25%;
+                }
+                h3{
+                    margin: 0;
+                    color: $cor-branca;
+                    padding: 10px;
+                    border-radius: 30px;
+                    background-color: $cor-principal;
+                    @include mobile {
+                        font-size: calc($tamanho-fonte*.8);
+                        
+                    }
+                }
+            }
+            .div-grid-soft{
+                height: 90%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                padding: 10px;
+                gap: 10px;
+                box-sizing: border-box;
+                @include mobile {
+                    height: 75%;
+                }
+                @include mobile {
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                }
+                
+                .div-trabalho-equipe{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    @include box-shadow;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    @include mobile {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                    }
+                    h3{
+                        margin: 0;
+                        color: $cor-cinza;
+                        font-size: $tamanho-fonte;
+                        text-align: center;
+                        @include mobile {
+                            font-size: 8px;
+                        }
+                    }
+                    p{  
+                        text-align: justify;
+                        text-indent: 20px;
+                        font-size: calc($tamanho-fonte*0.7);
+                        @include mobile {
+                            font-size: 4.5px;
+                        }
+                    }
+                }
+                .div-adaptabilidade{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    @include box-shadow;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    @include mobile {
+                        grid-column: 2/3;
+                        grid-row: 1/2;
+                    }
+                    h3{
+                        margin: 0;
+                        color: $cor-cinza;
+                        font-size: $tamanho-fonte;
+                        text-align: center;
+                        @include mobile {
+                            font-size: 8px;
+                        }
+                    }
+                    p{  
+                        text-align: justify;
+                        text-indent: 20px;
+                        font-size: calc($tamanho-fonte*0.7);
+                        @include mobile {
+                            font-size: 4.5px;
+                        }
+                    }
+                }
+                .div-aprendizado{
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                    @include box-shadow;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    @include mobile {
+                        grid-column: 3/4;
+                        grid-row: 1/2;
+                    }
+                    h3{
+                        margin: 0;
+                        color: $cor-cinza;
+                        font-size: $tamanho-fonte;
+                        text-align: center;
+                        @include mobile {
+                            font-size: 8px;
+                        }
+                    }
+                    p{  
+                        text-align: justify;
+                        text-indent: 20px;
+                        font-size: calc($tamanho-fonte*0.7);
+                        @include mobile {
+                            font-size: 4.5px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

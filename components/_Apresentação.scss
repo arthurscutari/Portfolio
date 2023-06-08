@@ -1,0 +1,315 @@
+@import '../abstract/variaveis';
+
+.section-apresentação{
+    height: 85vh;
+    width: 100vw;
+    @include box-shadow;
+    @include mobile{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .div-titulos{
+        height: 53%;
+        width: 100%;
+        @include display-flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        @include mobile{
+            height: 50%;
+        }
+        h2 {
+            margin: 0;
+            color: $cor-branca;
+            background-color: $cor-principal;
+            padding: 10px;
+            border-radius: 50px;
+            font-weight: 400;
+            font-size: calc($tamanho-fonte*1.5);
+            @include mobile{
+                font-size:calc($tamanho-fonte*.6);
+            }
+            
+        }
+        h1 {
+
+            margin: 0;
+            font-size: calc($tamanho-fonte*3.5);
+            line-height: 50px;
+            @include gradient;
+            @include mobile{
+                font-size:calc($tamanho-fonte*1.4);
+                line-height: 30px;
+            }
+            
+            
+        }
+        
+        h3{
+            margin: 10px 0;
+            font-size: calc($tamanho-fonte*1.3);
+            width: 70%;
+            text-align: center;
+            color: $cor-cinza;
+            font-weight: 400;
+            @include mobile {
+                font-size: calc($tamanho-fonte*.5);
+            }
+            
+        }
+        
+    }
+    .div-btn-fale{
+        height: 12%;
+        width: 100%;
+        @include mobile{
+            height: 10%;
+        }
+        @include display-flex;
+        a {
+            text-decoration: none;
+            border: 1px solid $cor-principal;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: $cor-principal;
+            margin: 0;
+            transition: all .5s ease;
+            @include mobile {
+                font-size: calc($tamanho-fonte);
+                padding: 15px;
+            }
+            
+            &:hover {
+                background-color: $cor-principal;
+                color: $cor-branca;
+                scale: 1.1;
+            }
+        }
+    }
+    .div-redes-sociais{
+        height: 10%;
+        width: 100%;
+        @include mobile{
+            height: 10%;
+        }
+        @include display-flex;
+        a:nth-of-type(1){
+            
+            @include box-shadow;
+            margin: 0 5px;
+            color: $cor-cinza;
+            cursor: pointer;
+            border-radius: 50%;
+            i{
+                border-radius: 50%;
+                padding: 15px;
+                margin: 0;
+                font-size: calc($tamanho-fonte*1.7);
+                transition: all 0.4s;
+                @include mobile {
+                    font-size: calc($tamanho-fonte*1.2);
+                    padding: 12px;
+                }
+                &:hover {
+                    background-color: $cor-verde;
+                    color: $cor-branca;
+
+                }
+            }
+        }
+        a:nth-of-type(2){
+            
+            @include box-shadow;
+            margin: 0 5px;
+            color: $cor-cinza;
+            cursor: pointer;
+            border-radius: 50%;
+            
+            i{
+                padding: 15px;
+                border-radius: 50%;
+                margin: 0;
+                font-size: calc($tamanho-fonte*1.7);
+                transition: all 0.4s;
+                @include mobile {
+                    font-size: calc($tamanho-fonte*1.2);
+                    padding: 12px;
+                }
+                &:hover {
+                    background-color: $cor-vermelha;
+                    color: $cor-branca;
+
+                }
+            }
+        }
+        a:nth-of-type(3){
+            
+            @include box-shadow;
+            margin: 0 5px;
+            color: $cor-cinza;
+            cursor: pointer;
+            border-radius: 50%;
+            
+            i{
+                border-radius: 50%;
+                padding: 15px;
+                margin: 0;
+                transition: all 0.4s;
+                font-size: calc($tamanho-fonte*1.7);
+                @include mobile {
+                    font-size: calc($tamanho-fonte*1.2);
+                    padding: 12px;
+                }
+                &:hover {
+                    background-color: $cor-azul;
+                    color: $cor-branca;
+
+                }
+            }
+        }
+        a:nth-of-type(4){
+            
+            @include box-shadow;
+            margin: 0 5px;
+            color: $cor-cinza;
+            cursor: pointer;
+            border-radius: 50%;
+           
+            i{
+                border-radius: 50%;
+                padding: 15px;
+                margin: 0;
+                font-size: calc($tamanho-fonte*1.7);
+                transition: all 0.4s;
+                @include mobile {
+                    font-size: calc($tamanho-fonte*1.2);
+                    padding: 12px;
+                }
+                &:hover {
+                    background-color: $cor-git;
+                    color: $cor-branca;
+
+                }
+            }
+        }
+    }
+    .div-msg{
+        height: 5%;
+        width: 100%;
+        @include display-flex;
+        @include mobile{
+            height: 3%;
+        }
+        p {
+            margin: 0;
+            color: $cor-cinza;
+            font-size: calc($tamanho-fonte*1.2);
+            @include mobile{
+                font-size:calc($tamanho-fonte*.7);
+            }
+        }
+    }
+    .div-icones-habilidades{
+        height: 15%;
+        width: 100%;
+        @include display-flex;
+        @include mobile{
+            height: 10%;
+        }
+        i:nth-of-type(1){
+            color:$cor-cinza;
+            padding: 20px;
+            font-size: ($tamanho-fonte*2.5);
+            border-radius: 15px;
+            @include box-shadow;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.7s;
+            @include mobile{
+                font-size:$tamanho-fonte;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            &:hover {
+
+                color: $cor-vermelha;
+            }
+        }
+        i:nth-of-type(2){
+            color:$cor-cinza;
+            padding: 20px;
+            font-size: ($tamanho-fonte*2.5);
+            border-radius: 15px;
+            @include box-shadow;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.7s;
+            @include mobile{
+                font-size:$tamanho-fonte;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            &:hover {
+
+                color: $cor-azul;
+            }
+        }
+        i:nth-of-type(3){
+            color:$cor-cinza;
+            padding: 20px;
+            font-size: ($tamanho-fonte*2.5);
+            border-radius: 15px;
+            @include box-shadow;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.7s;
+            @include mobile{
+                font-size:$tamanho-fonte;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            &:hover {
+
+                color: $cor-azul-react;
+            }
+        }
+        i:nth-of-type(4){
+            color:$cor-cinza;
+            padding: 20px;
+            font-size: ($tamanho-fonte*2.5);
+            border-radius: 15px;
+            @include box-shadow;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.7s;
+            @include mobile{
+                font-size:$tamanho-fonte;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            &:hover {
+
+                color: $cor-laranja;
+            }
+        }
+        i:nth-of-type(5){
+            color:$cor-cinza;
+            padding: 20px;
+            font-size: ($tamanho-fonte*2.5);
+            border-radius: 15px;
+            @include box-shadow;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.7s;
+            @include mobile{
+                font-size:$tamanho-fonte;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            &:hover {
+
+                color: $cor-amarela;
+            }
+        }
+    }
+}

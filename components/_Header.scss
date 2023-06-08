@@ -1,0 +1,136 @@
+@import '../abstract/variaveis';
+
+header {
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include mobile{
+        width: 100%;
+    }
+    .div-header{
+        @include box-shadow;
+        width: 80%;
+        height: 50%;
+        border-radius: 50px;
+        display: flex;
+       
+        @include mobile{
+            width: 100%;
+            justify-content: space-around;
+        }
+        .div-idiomas{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 10%;
+            @include mobile{
+                width: 20%;
+            }
+            img{
+                height: 30px;
+                width: 30px;
+                margin: 0 5px;
+                @include mobile{
+                    height: 20px;
+                    width: 20px;
+                   
+                }
+            }
+        }
+        .div-header-nome{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            padding-right: 10px;
+            @include mobile {
+                display: none;
+            }
+            i{
+                color: $cor-verde;
+                margin: 0 5px;
+                transform: translateY(-2px);
+            }
+            h2{
+                color: $cor-verde;
+                font-size:$tamanho-fonte;
+                padding-right: 70px;
+            }
+            
+        }
+        nav{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            @include mobile{
+                width: 50%;
+              
+            }
+            a {
+                text-decoration: none;
+                color:$cor-cinza;
+                cursor: pointer;
+                margin: 0 10px;
+                font-size:$tamanho-fonte;
+                transition: all 0.3s ease-in-out;
+                transform-origin: center;
+                @include mobile{
+                    font-size:calc($tamanho-fonte*.5);
+                    margin: 0 5px;
+                }
+            &:hover {
+                scale: (1.2);
+                color: $cor-principal;
+                
+            }
+            }
+        }
+        .div-btn-contato{
+            height: 100%;
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mobile{
+                width: 20%;
+               
+            }
+            .btn-contato{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75%;
+                width: 85%; 
+                background-color: $cor-principal;
+                border-radius: 50px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: $cor-branca;
+                    font-size:$tamanho-fonte;
+                    @include mobile{
+                        font-size:calc($tamanho-fonte*.5);
+                    }
+                }
+                span {
+                    color: $cor-branca;
+                    @include mobile{
+                        font-size: 10px;
+                    }
+                }
+                    
+            }
+        }
+    }
+}
